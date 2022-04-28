@@ -31,8 +31,8 @@ if(horario.getHours() >= 9){
 
 client.on('ready', () => {
 setInterval(() => {
-    const servidor = client.guilds.cache.get('692471068580905048')
-    const usuario = servidor.members.fetch('374212478068064258')
+    const servidor = client.guilds.cache.get(/*Id do servidor*/)
+    const usuario = servidor.members.fetch(/*Id do usuario*/)
       .then(obj => {
         let nick = Number(obj.nickname)
         nick++
