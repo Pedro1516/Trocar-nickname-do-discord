@@ -1,7 +1,6 @@
 //Muda o nome a cada 5 minutos
 
 client.on('ready', () => {
-  const horario = new Date()
   let i = 0
   let nomes = [/*lista de nomes*/]
 
