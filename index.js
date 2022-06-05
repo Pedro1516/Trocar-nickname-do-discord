@@ -20,21 +20,3 @@ client.on('ready', () => {
 })
 
 
-//Aumenta o nickname em 1 a cada segundo (SE O USERNAME FOR APENAS NUMEROS)
-
-client.on('ready', () => {
-setInterval(() => {
-    const servidor = client.guilds.cache.get(/*Id do servidor*/)
-    const usuario = servidor.members.fetch(/*Id do usuario*/)
-      .then(obj => {
-        let nick = Number(obj.nickname)
-        nick++
-
-        obj.setNickname(nick)
-        obj.nickname = nick
-        console.log(obj)
-
-      })
-
-  }, 1000)
-  }
